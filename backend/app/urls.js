@@ -16,7 +16,6 @@ router.get("/", async (req, res) => {
 router.get("/:shortUrl", async (req, res) => {
     try {
         const item = await Url.findOne({shortUrl: req.params.shortUrl});
-        console.log(item);
         if (!item) {
             return res.status(404).send({message: "Url is not found"});
         }
