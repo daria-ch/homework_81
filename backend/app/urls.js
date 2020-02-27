@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
     }
 });
 
-router.get("/:shotUrl", async (req, res) => {
+router.get("/:shortUrl", async (req, res) => {
     try {
         const item = await Url.findOne({shortUrl: req.params.shortUrl});
         console.log(item);
