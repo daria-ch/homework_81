@@ -8,9 +8,6 @@ import {applyMiddleware, createStore, compose} from "redux";
 import {BrowserRouter} from 'react-router-dom';
 import reducer from "./store/reducer";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 

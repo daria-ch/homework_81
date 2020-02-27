@@ -1,4 +1,4 @@
-import {POST_LINK_SUCCESS} from "./actions";
+import {CREATE_LINK_SUCCESS} from "./actions";
 
 const initialState = {
     shortUrl: ''
@@ -6,12 +6,11 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case POST_LINK_SUCCESS:
-            return {...state, shortUrl: action.link};
+        case CREATE_LINK_SUCCESS:
+            return {...state, shortUrl: action.link.shortUrl};
         default:
             return state;
     }
 };
-
 
 export default reducer;

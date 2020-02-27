@@ -1,0 +1,24 @@
+.app {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-block {
+    display: flex;
+    margin: 0 auto;
+    max-width: 50%;
+    flex-direction: column;
+}
+
+.shorten-btn {
+    width: 100px;
+    height: 30px;
+    margin: 15px auto;
+}
+
+.url-input{
+    outline: none;
+    height: 30px;
+}
