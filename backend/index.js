@@ -14,7 +14,7 @@ const run = async () => {
         useUnifiedTopology: true
     });
 
-    app.use("/links", urls);
+    app.use("/", urls);
 
     app.listen(port, () => {
         console.log(`Server started on ${port} port!`);
